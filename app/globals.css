@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: auto;
+}
+
+body {
+  background-color: #1a1a1a;
+  color: #f5f0e8;
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Smooth Scroll für GSAP */
+html.lenis {
+  height: auto;
+}
+
+/* Grain Overlay */
+.grain-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1000;
+  opacity: 0.03;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c75b39;
+  border-radius: 4px;
+}
+
+/* Split Text Styles */
+.split-char {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(100%);
+}
+
+.split-char.visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Curved Image Mask */
+.curved-image {
+  clip-path: circle(0% at 50% 50%);
+  transition: clip-path 1.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.curved-image.visible {
+  clip-path: circle(150% at 50% 50%);
+}
+
+/* Horizontal Scroll Section */
+.horizontal-scroll-container {
+  display: flex;
+  flex-wrap: nowrap;
+  will-change: transform;
+}
+
+/* Product Card Transitions */
+.product-card {
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.product-card.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.product-card.inactive {
+  opacity: 0.3;
+  transform: scale(0.95);
+}
+
+/* Text Reveal */
+.text-reveal {
+  overflow: hidden;
+}
+
+.text-reveal-inner {
+  transform: translateY(100%);
+  transition: transform 1s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.text-reveal-inner.visible {
+  transform: translateY(0);
+}
+
+/* Footer Zoom */
+.footer-zoom {
+  transform: scale(1.2);
+  transition: transform 2s ease-out;
+}
+
+.footer-zoom.visible {
+  transform: scale(1);
+}

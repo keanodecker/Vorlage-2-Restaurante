@@ -76,25 +76,27 @@ export default function AboutSection() {
           <h2 className="font-serif text-6xl md:text-7xl text-zarko-dark leading-none">
             EIN STÜCK
             <br />
-            <span className="italic text-zarko-terra">Kroatien</span>
+            <span className="italic text-zarko-terra">Italien</span>
           </h2>
           <p className="text-zarko-dark/70 leading-relaxed max-w-md">
-            Seit über 20 Jahren bringt Zarko die Aromen seiner kroatischen Heimat nach Lahr.
-            Was als kleine Familien-Gaststätte begann, ist heute eine Institution für alle,
-            die authentische Balkan-Küche mit regionalen Schwarzwald-Zutaten suchen.
+            Seit über 15 Jahren ist das Bella Vista mehr als ein Restaurant – es ist
+            unser Familienprojekt mitten in Freiburg. Was mit einer kleinen Trattoria begann,
+            ist heute ein Treffpunkt für alle, die mediterrane Küche mit Charakter lieben.
+            Wir kochen nach traditionellen Rezepten, mit Zutaten aus der Region und der
+            Leidenschaft, die jedes gute Essen ausmacht.
           </p>
           <div className="flex gap-10 pt-2">
             <div>
-              <span className="block font-serif text-3xl text-zarko-terra">20+</span>
-              <span className="text-xs tracking-widest text-zarko-dark/50">Jahre Erfahrung</span>
+              <span className="block font-serif text-3xl text-zarko-terra">15+</span>
+              <span className="text-xs tracking-widest text-zarko-dark/50">Jahre Tradition</span>
             </div>
             <div>
-              <span className="block font-serif text-3xl text-zarko-terra">4,4</span>
+              <span className="block font-serif text-3xl text-zarko-terra">4,8</span>
               <span className="text-xs tracking-widest text-zarko-dark/50">Google Bewertung</span>
             </div>
             <div>
               <span className="block font-serif text-3xl text-zarko-terra">100%</span>
-              <span className="text-xs tracking-widest text-zarko-dark/50">Handgemacht</span>
+              <span className="text-xs tracking-widest text-zarko-dark/50">Hausgemacht</span>
             </div>
           </div>
           <a
@@ -110,17 +112,17 @@ export default function AboutSection() {
         <div ref={imageRef} className="relative">
           <div className="aspect-[4/3] overflow-hidden rounded-sm">
             <img
-              src="/images/innen.png"
-              alt="Zum Zarko – Innenbereich"
+              src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1400&q=80"
+              alt="Bella Vista – Innenbereich"
               className="w-full h-full object-cover"
             />
           </div>
           {/* Quote stamp */}
           <div className="absolute -bottom-6 -right-6 bg-zarko-terra text-white p-6 max-w-xs">
             <p className="font-serif text-base italic">
-              "Kochen ist keine Kunst, sondern eine Leidenschaft, die man teilen muss."
+              "Gutes Essen verbindet – und ein gemeinsamer Tisch ist der schönste Ort der Welt."
             </p>
-            <p className="text-xs mt-2 opacity-90">— Zarko</p>
+            <p className="text-xs mt-2 opacity-90">— [Ihr Name], Inhaber</p>
           </div>
         </div>
       </div>

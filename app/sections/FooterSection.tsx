@@ -158,7 +158,7 @@ export default function FooterSection() {
           <p className="text-[11px] text-slate-400/70" style={{ color: "#94a3b8" }}>
             Webseite erstellt von Media Castle –{" "}
             <a
-              href="https://www.media-castle.com"
+              href="http://media-castle.com"
               target="_blank"
               rel="noopener noreferrer"
               className="underline hover:text-zarko-terra transition-colors"

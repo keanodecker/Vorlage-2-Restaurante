@@ -1,9 +1,15 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import DemoBadge from "./components/DemoBadge";
 
 export const metadata: Metadata = {
-  title: "Zum Zarko – Kroatisch • Mediterran • Regional",
-  description: "Authentische kroatische Küche im Herzen des Schwarzwalds. Seit über 20 Jahren. Tradition trifft auf Herzlichkeit.",
+  title: "Restaurant Bella Vista – Mediterrane Küche in Freiburg",
+  description:
+    "Demo-Webseite – mediterrane Küche, Tradition und Gastfreundschaft mitten in Freiburg.",
+  robots: {
+    index: false,
+    follow: false,
+  },
 };
 
 export default function RootLayout({
@@ -13,9 +19,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="de">
+      <head>
+        <link
+          href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&display=swap"
+          rel="stylesheet"
+        />
+      </head>
       <body>
         <div className="grain-overlay" />
         {children}
+        <DemoBadge />
       </body>
     </html>
   );

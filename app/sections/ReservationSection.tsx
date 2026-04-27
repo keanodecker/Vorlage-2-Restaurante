@@ -76,25 +76,32 @@ export default function ReservationSection() {
 
             <p className="text-zarko-cream/60 leading-relaxed max-w-sm">
               Reservieren Sie Ihren Tisch direkt online. Bei größeren Gruppen
-              (8+ Personen) oder der Peka-Spezialität bitten wir um telefonische
-              Absprache.
+              (8+ Personen) oder besonderen Anlässen bitten wir um eine
+              telefonische Absprache.
             </p>
 
             <div className="space-y-3 text-sm">
               <div className="flex items-center gap-3 text-zarko-cream/70">
                 <span className="w-1.5 h-1.5 rounded-full bg-zarko-terra flex-shrink-0" />
-                <span>Schillerstraße 3, 77933 Lahr/Schwarzwald</span>
+                <span>[Ihre Adresse], 79098 Freiburg</span>
               </div>
               <a
-                href="tel:07821983792"
+                href="#reservieren"
                 className="flex items-center gap-3 text-zarko-cream/70 hover:text-zarko-terra transition-colors"
               >
                 <span className="w-1.5 h-1.5 rounded-full bg-zarko-terra flex-shrink-0" />
-                <span>07821 983792</span>
+                <span>[Ihre Telefonnummer]</span>
+              </a>
+              <a
+                href="#reservieren"
+                className="flex items-center gap-3 text-zarko-cream/70 hover:text-zarko-terra transition-colors"
+              >
+                <span className="w-1.5 h-1.5 rounded-full bg-zarko-terra flex-shrink-0" />
+                <span>[Ihre E-Mail]</span>
               </a>
               <div className="flex items-center gap-3 text-zarko-cream/70">
                 <span className="w-1.5 h-1.5 rounded-full bg-zarko-terra flex-shrink-0" />
-                <span>Mo–Fr ab 11:00 Uhr · Sa ab 11:00 Uhr · So Ruhetag</span>
+                <span>Di–So geöffnet · Mo Ruhetag</span>
               </div>
             </div>
           </div>
@@ -122,7 +129,7 @@ export default function ReservationSection() {
                   <input
                     type="tel"
                     required
-                    placeholder="07821 …"
+                    placeholder="0761 …"
                     className="w-full bg-transparent border-b border-zarko-cream/20 py-3 text-zarko-cream placeholder-zarko-cream/30 focus:border-zarko-terra focus:outline-none transition-colors text-sm"
                   />
                 </div>

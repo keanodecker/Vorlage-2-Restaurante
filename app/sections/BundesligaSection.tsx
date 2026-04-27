@@ -91,7 +91,7 @@ export default function BundesligaSection() {
         {/* Heading */}
         <div className="mb-16">
           <span className="block text-zarko-terra text-sm tracking-[0.3em] uppercase mb-4">
-            Live-Sport im Greif Zum Zarko
+            Live-Sport im Bella Vista
           </span>
           <h2 className="font-serif text-5xl md:text-6xl text-zarko-cream leading-none">
             Bundesliga<br />
@@ -104,8 +104,8 @@ export default function BundesligaSection() {
           {/* Left: Content */}
           <div ref={contentRef} className="space-y-10">
             <p className="text-zarko-cream/70 leading-relaxed max-w-md">
-              Traditionsgaststätte Greif Zum Zarko ist wieder am Ball –
-              und zeigt dir die Bundesliga-Saison 2025/26 live in HD!
+              Bei uns wird Fußball zum Erlebnis – die komplette Saison 2025/26
+              in gemütlicher Atmosphäre, auf Großbildleinwand und mit kühlem Bier vom Fass.
             </p>
 
             {/* SKY & DAZN blocks */}
@@ -140,13 +140,13 @@ export default function BundesligaSection() {
             <div className="border-t border-zarko-cream/10 pt-8 space-y-3">
               <div className="flex items-center gap-3 text-zarko-cream/80 text-sm">
                 <span className="text-zarko-terra">✓</span>
-                Frisch gezapftes Bier &amp; herzhafte Küche
+                Frisch gezapftes Bier &amp; mediterrane Küche
               </div>
               <p className="text-zarko-terra text-sm font-medium">
-                Sonntag ist Ruhetag – komm Freitag &amp; Samstag und erleb die Bundesliga bei uns!
+                Reservieren Sie rechtzeitig zu den Topspielen – die besten Plätze sind schnell weg!
               </p>
               <p className="text-zarko-cream/40 text-xs italic">
-                Greif Zum Zarko – Dein Platz fürs Spiel.
+                Bella Vista – wo Genuss und Spielfreude zusammenkommen.
               </p>
             </div>
           </div>
@@ -158,8 +158,8 @@ export default function BundesligaSection() {
           >
             <div className="absolute inset-0 bg-gradient-to-t from-zarko-dark/60 to-transparent z-10" />
             <img
-              src="/images/partykeller.jpg"
-              alt="Bundesliga Live – Greif Zum Zarko"
+              src="https://images.unsplash.com/photo-1577080424005-b94e9bca1cf7?auto=format&fit=crop&w=1400&q=80"
+              alt="Bundesliga Live im Bella Vista"
               className="w-full h-full object-cover"
             />
             {/* Badge */}

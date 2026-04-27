@@ -66,11 +66,11 @@ export default function EventSection() {
 
         <div className="mb-16">
           <span className="block text-zarko-terra text-sm tracking-[0.3em] uppercase mb-4">
-            Feiern im Greif Zum Zarko
+            Feiern im Bella Vista
           </span>
           <h2 className="font-serif text-5xl md:text-6xl text-zarko-cream leading-none">
             Events &<br />
-            <span className="italic text-zarko-clay">Partykeller</span>
+            <span className="italic text-zarko-clay">Privatfeiern</span>
           </h2>
         </div>
 
@@ -83,8 +83,8 @@ export default function EventSection() {
           >
             <div className="absolute inset-0 bg-gradient-to-t from-zarko-darker/40 to-transparent z-10" />
             <img
-              src="/images/partykeller.jpg"
-              alt="Partykeller – Zum Zarko"
+              src="https://images.unsplash.com/photo-1530062845289-9109b2c9c868?auto=format&fit=crop&w=1400&q=80"
+              alt="Eventbereich – Bella Vista"
               className="w-full h-full object-cover"
             />
           </div>
@@ -92,18 +92,18 @@ export default function EventSection() {
           {/* Right: Info + Booking */}
           <div ref={contentRef} className="space-y-8">
             <p className="text-zarko-cream/70 leading-relaxed">
-              Ob Geburtstag, Firmenfeier, Hochzeit oder Vereinsabend –
-              unser Partykeller bietet den perfekten Rahmen für unvergessliche
-              Abende. Wir kümmern uns um alles: vom Buffet bis zur Dekoration.
+              Ob Geburtstag, Firmenfeier, Hochzeit oder Familientreffen –
+              unser separater Eventbereich bietet den perfekten Rahmen für
+              unvergessliche Abende. Wir kümmern uns um alles: vom mehrgängigen
+              Menü bis zur stilvollen Dekoration.
             </p>
 
-            {/* Placeholder Features – werden mit echten Infos ersetzt */}
             <div className="space-y-4">
               {[
-                "Bis zu XX Personen",
-                "Exklusiv mietbar",
-                "Catering & Buffet auf Anfrage",
-                "Eigene Bar & Bestuhlung inklusive",
+                "Bis zu 60 Personen",
+                "Exklusiv buchbar",
+                "Mehrgang-Menüs & Buffet auf Wunsch",
+                "Eigene Bar mit Weinkarte",
               ].map((item) => (
                 <div key={item} className="flex items-center gap-3 text-sm text-zarko-cream/70">
                   <span className="w-1.5 h-1.5 rounded-full bg-zarko-terra flex-shrink-0" />
@@ -118,10 +118,10 @@ export default function EventSection() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
-                  href="tel:07821983792"
+                  href="#reservieren"
                   className="px-6 py-3 bg-zarko-terra text-white text-sm tracking-widest uppercase text-center hover:bg-zarko-terra/90 transition-colors"
                 >
-                  07821 983792
+                  [Ihre Telefonnummer]
                 </a>
                 <a
                   href="#reservieren"

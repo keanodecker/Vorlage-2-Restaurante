@@ -72,8 +72,8 @@ export default function FooterSection() {
       >
         <div className="absolute inset-0 bg-zarko-darker/50 z-10" />
         <img
-          src="/images/drink.png"
-          alt="Zum Zarko – Garten & Atmosphäre"
+          src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=2400&q=80"
+          alt="Bella Vista – Atmosphäre"
           className="w-full h-full object-cover"
         />
       </div>
@@ -88,7 +88,7 @@ export default function FooterSection() {
           >
             {splitText("NICHT NUR EIN RESTAURANT,")}
             <br />
-            {splitText("EINE TRADITION.")}
+            {splitText("EIN LEBENSGEFÜHL.")}
           </h2>
         </div>
 
@@ -97,18 +97,18 @@ export default function FooterSection() {
           <div className="max-w-md space-y-4">
             <p className="text-sm text-zarko-cream/60 tracking-widest">BESUCHEN SIE UNS</p>
             <div className="space-y-1 text-sm text-zarko-cream/80">
-              <p>Schillerstraße 3, 77933 Lahr/Schwarzwald</p>
-              <p className="pt-1">Mo: 11:00–14:00 & 17:00–23:00</p>
-              <p>Di–Do: 11:00–14:00 & 17:00–01:00</p>
-              <p>Fr: 11:00–14:00 & 17:00–01:00</p>
-              <p>Sa: 11:00–01:00</p>
-              <p className="text-zarko-terra">So: Geschlossen</p>
+              <p>[Ihre Adresse], 79098 Freiburg</p>
+              <p className="pt-1">Di–Do: 11:30–14:30 & 17:30–23:00</p>
+              <p>Fr: 11:30–14:30 & 17:30–24:00</p>
+              <p>Sa: 12:00–24:00</p>
+              <p>So: 12:00–22:00</p>
+              <p className="text-zarko-terra">Mo: Ruhetag</p>
             </div>
             <a
-              href="tel:07821983792"
+              href="#reservieren"
               className="flex items-center gap-3 border-b border-zarko-cream/30 pb-2 hover:border-zarko-terra transition-colors group"
             >
-              <span className="text-zarko-cream group-hover:text-zarko-terra transition-colors">07821 983792</span>
+              <span className="text-zarko-cream group-hover:text-zarko-terra transition-colors">[Ihre Telefonnummer]</span>
               <span className="text-zarko-cream/40 group-hover:text-zarko-terra transition-colors">→</span>
             </a>
           </div>
@@ -118,8 +118,8 @@ export default function FooterSection() {
         <div className="flex justify-between items-end border-t border-zarko-cream/10 pt-8">
           <div className="max-w-sm">
             <p className="text-xs text-zarko-cream/60 leading-relaxed">
-              Authentische kroatische Küche im Herzen des Schwarzwalds —
-              wo kroatische Tradition und regionale Zutaten seit über 20 Jahren aufeinandertreffen.
+              Mediterrane Küche im Herzen von Freiburg —
+              wo italienische Tradition und regionale Zutaten seit über 15 Jahren zusammenfinden.
             </p>
           </div>
           <div className="flex gap-16">
@@ -128,16 +128,16 @@ export default function FooterSection() {
               <ul className="space-y-1 text-sm text-zarko-cream/80">
                 <li><a href="#about" className="hover:text-zarko-terra transition-colors">Über uns</a></li>
                 <li><a href="#menu" className="hover:text-zarko-terra transition-colors">Speisekarte</a></li>
-                <li><a href="#contact" className="hover:text-zarko-terra transition-colors">Reservierung</a></li>
-                <li><a href="#" className="hover:text-zarko-terra transition-colors">Mittagstisch</a></li>
+                <li><a href="#reservieren" className="hover:text-zarko-terra transition-colors">Reservierung</a></li>
+                <li><a href="#event" className="hover:text-zarko-terra transition-colors">Events</a></li>
               </ul>
             </div>
             <div className="space-y-2">
               <p className="text-xs text-zarko-cream/40 tracking-widest">HIGHLIGHTS</p>
               <ul className="space-y-1 text-sm text-zarko-cream/80">
-                <li><a href="#menu" className="hover:text-zarko-terra transition-colors">Ćevapčići</a></li>
-                <li><a href="#menu" className="hover:text-zarko-terra transition-colors">Peka</a></li>
-                <li><a href="#menu" className="hover:text-zarko-terra transition-colors">Mixed Grill</a></li>
+                <li><a href="#menu" className="hover:text-zarko-terra transition-colors">Tagliatelle al Tartufo</a></li>
+                <li><a href="#menu" className="hover:text-zarko-terra transition-colors">Saltimbocca</a></li>
+                <li><a href="#menu" className="hover:text-zarko-terra transition-colors">Grigliata Mista</a></li>
               </ul>
             </div>
           </div>
@@ -145,12 +145,27 @@ export default function FooterSection() {
 
         {/* Copyright */}
         <div className="flex justify-between items-center pt-4 text-xs text-zarko-cream/40">
-          <span>© 2025 Zum Zarko. Alle Rechte vorbehalten.</span>
+          <span>© 2025 [Ihr Firmenname]. Alle Rechte vorbehalten.</span>
           <div className="flex gap-8">
             <a href="#" className="hover:text-zarko-terra transition-colors">Instagram</a>
-            <a href="#" className="hover:text-zarko-terra transition-colors">Impressum</a>
-            <a href="#" className="hover:text-zarko-terra transition-colors">Datenschutz</a>
+            <a href="/impressum" className="hover:text-zarko-terra transition-colors">Impressum</a>
+            <a href="/datenschutz" className="hover:text-zarko-terra transition-colors">Datenschutz</a>
           </div>
+        </div>
+
+        {/* Media Castle Branding */}
+        <div className="pt-4 text-center">
+          <p className="text-[11px] text-slate-400/70" style={{ color: "#94a3b8" }}>
+            Webseite erstellt von Media Castle –{" "}
+            <a
+              href="https://mediacastle.de"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline hover:text-zarko-terra transition-colors"
+            >
+              mediacastle.de
+            </a>
+          </p>
         </div>
       </div>
     </section>

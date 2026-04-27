@@ -7,13 +7,13 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const hours = [
-  { day: "Montag",     times: ["11:00–14:00", "17:00–23:00"] },
-  { day: "Dienstag",   times: ["11:00–14:00", "17:00–01:00"] },
-  { day: "Mittwoch",   times: ["11:00–14:00", "17:00–01:00"] },
-  { day: "Donnerstag", times: ["11:00–14:00", "17:00–01:00"] },
-  { day: "Freitag",    times: ["11:00–14:00", "17:00–01:00"] },
-  { day: "Samstag",    times: ["11:00–01:00"] },
-  { day: "Sonntag",    times: null },
+  { day: "Montag",     times: null },
+  { day: "Dienstag",   times: ["11:30–14:30", "17:30–23:00"] },
+  { day: "Mittwoch",   times: ["11:30–14:30", "17:30–23:00"] },
+  { day: "Donnerstag", times: ["11:30–14:30", "17:30–23:00"] },
+  { day: "Freitag",    times: ["11:30–14:30", "17:30–24:00"] },
+  { day: "Samstag",    times: ["12:00–24:00"] },
+  { day: "Sonntag",    times: ["12:00–22:00"] },
 ];
 
 export default function OpeningHoursSection() {
